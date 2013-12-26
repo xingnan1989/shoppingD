@@ -1,0 +1,46 @@
+var xmlhttpreq=false;
+function creatXMLHttpRequest(){
+	if(window.XMLHttpRequest){
+		xmlhttpreq=new XMLHttpRequest();
+	}else{
+		if(window.ActiveXObject){
+			try{
+				xmlhttpreq=new ActiveXObject("Msm12.XMLHttp");
+			}catch(e){
+				try{
+					xmlhttpreq=new ActiveXObject("Microsoft.XMLHttp");
+				}
+				catch(e){
+				}
+			}
+		}
+	}
+}
+function handAjax(){
+	if(xmlhttpreq.readyState==4){
+		if(xmlhttpreq.status==200){
+			//var num=(xmlhttpreq.responseText);
+			//alert(xmlhttpreq.responseText);
+			var str=xmlhttpreq.responseText;
+			//alert(str);
+			var strArray=new Array();
+			strArray=str.split("|");
+			var countgoodsNormalPrice=strArray[0];
+			var countgoodsMemberPrice=strArray[1];
+			alert('ÐÞ¸Ä³É¹¦!');
+			document.getElementById("countgoodsNormalPrice").innerHTML=countgoodsNormalPrice;
+			document.getElementById("countgoodsMemberPrice").innerHTML=countgoodsMemberPrice;
+			//alert(countgoodsNormalPrice);
+			//alert(countgoodsMemberPrice);
+		}
+	}
+}
+function shopcarUpdate(){
+	var goodsID=document.getElementById("goodsID").value;
+	var num=document.getElementById("txt_grey").value;
+	var url="OrderShopcarUpdate?num="+num+"&goodID="+goodsID;
+	creatXMLHttpRequest();
+	xmlhttpreq.open("get",url,true);
+	xmlhttpreq.onreadystatechange=handAjax;
+	xmlhttpreq.send(null);
+}

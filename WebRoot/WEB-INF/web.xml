@@ -1,0 +1,1594 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+<!-- 陈孟飞 开始 -->	
+<!-- 跳转到jsp页面中 -->
+  <servlet>
+  	<servlet-name>mai.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/show/mai.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>mai.jsp</servlet-name>
+  	<url-pattern>/mai.jsp</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>sellsort.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/show/sellsort.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>sellsort.jsp</servlet-name>
+  	<url-pattern>/sellsort.jsp</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<servlet-name>orderManage.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/manager/orderManage.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>orderManage.jsp</servlet-name>
+  	<url-pattern>/manager/orderManage.jsp</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>mode.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/manager/mode.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>mode.jsp</servlet-name>
+  	<url-pattern>/manager/mode.jsp</url-pattern>
+  </servlet-mapping>
+
+  
+  <servlet>
+  	<servlet-name>newGoods.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/show/newGoods.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>newGoods.jsp</servlet-name>
+  	<url-pattern>/newGoods.jsp</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+  	<servlet-name>placard_add.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/manager/placard_add.jsp</jsp-file>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>placard_add.jsp</servlet-name>
+  	<url-pattern>/manager/placard_add.jsp</url-pattern>
+  </servlet-mapping>
+ <!-- 跳转到jsp页面中 -->
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderShopcar</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderShopcar</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderShopcarMoney</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderShopcarMoney</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderShopcarUpdate</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderShopcarUpdate</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CarNull</servlet-name>
+    <servlet-class>com.fendou.order.manager.CarNull</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Null</servlet-name>
+    <servlet-class>com.fendou.order.manager.Null</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderShopcarDelete</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderShopcarDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderShopcarDrop</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderShopcarDrop</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderShopcarCheckout</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderShopcarCheckout</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderAddressUpdate</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderAddressUpdate</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderAddressSave</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderAddressSave</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderPayModeUpdate</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderPayModeUpdate</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderPayMode_Text</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderPayMode_Text</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderSubmit</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderSubmit</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectProvince</servlet-name>
+    <servlet-class>com.fendou.order.manager.SelectProvince</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectCityServlet</servlet-name>
+    <servlet-class>com.fendou.order.manager.SelectCityServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectAreaServlet</servlet-name>
+    <servlet-class>com.fendou.order.manager.SelectAreaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderCarryMode</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderCarryMode</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderCarryModeUpdate</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderCarryModeUpdate</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderCarryMode_Text</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderCarryMode_Text</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Order</servlet-name>
+    <servlet-class>com.fendou.order.manager.Order</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderSelect</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderSelect</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderDelete</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Null2</servlet-name>
+    <servlet-class>com.fendou.order.manager.Null2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderOrderAndDetatlSelect</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderOrderAndDetatlSelect</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateOrderNumber</servlet-name>
+    <servlet-class>com.fendou.order.manager.UpdateOrderNumber</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RevertGoodsNumber</servlet-name>
+    <servlet-class>com.fendou.order.manager.RevertGoodsNumber</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderDetail</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderDetail</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderDetailShow</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderDetailShow</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderManager</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderManager</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Null3</servlet-name>
+    <servlet-class>com.fendou.order.manager.Null3</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Null4</servlet-name>
+    <servlet-class>com.fendou.order.manager.Null4</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderDelete2</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderDelete2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderDetailShow2</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderDetailShow2</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderConsignment</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderConsignment</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PlacardPagination</servlet-name>
+    <servlet-class>com.fendou.placard.manager.PlacardPagination</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PlacardSelect</servlet-name>
+    <servlet-class>com.fendou.placard.manager.PlacardSelect</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PlacardInsert</servlet-name>
+    <servlet-class>com.fendou.placard.manager.PlacardInsert</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Username</servlet-name>
+    <servlet-class>com.fendou.placard.manager.Username</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PlacardDelete</servlet-name>
+    <servlet-class>com.fendou.placard.manager.PlacardDelete</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PlacardUpdate</servlet-name>
+    <servlet-class>com.fendou.placard.manager.PlacardUpdate</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PlacardSelectplacardID</servlet-name>
+    <servlet-class>com.fendou.placard.manager.PlacardSelectplacardID</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PlacardShow</servlet-name>
+    <servlet-class>com.fendou.placard.manager.PlacardShow</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>IndexSelect</servlet-name>
+    <servlet-class>com.fendou.util.IndexSelect</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StatisticSelect</servlet-name>
+    <servlet-class>com.fendou.statistic.manager.StatisticSelect</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StatisticSelectShow</servlet-name>
+    <servlet-class>com.fendou.statistic.manager.StatisticSelectShow</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderSend</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderSend</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderSendYorN</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderSendYorN</servlet-class>
+  </servlet>
+	<servlet>
+    <servlet-name>FavoritsSelect</servlet-name>
+    <servlet-class>com.fendou.individuality.manager.FavoritsSelect</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FavoritsInsert</servlet-name>
+    <servlet-class>com.fendou.individuality.manager.FavoritsInsert</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FavoritsSelectManager</servlet-name>
+    <servlet-class>com.fendou.individuality.manager.FavoritsSelectManager</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FavoritsDelete</servlet-name>
+    <servlet-class>com.fendou.individuality.manager.FavoritsDelete</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>OrderShopcar</servlet-name>
+    <url-pattern>/OrderShopcar</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderShopcarMoney</servlet-name>
+    <url-pattern>/OrderShopcarMoney</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderShopcarUpdate</servlet-name>
+    <url-pattern>/OrderShopcarUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CarNull</servlet-name>
+    <url-pattern>/CarNull</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Null</servlet-name>
+    <url-pattern>/Null</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderShopcarDelete</servlet-name>
+    <url-pattern>/OrderShopcarDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderShopcarDrop</servlet-name>
+    <url-pattern>/OrderShopcarDrop</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderShopcarCheckout</servlet-name>
+    <url-pattern>/OrderShopcarCheckout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderAddressUpdate</servlet-name>
+    <url-pattern>/OrderAddressUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderAddressSave</servlet-name>
+    <url-pattern>/OrderAddressSave</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderPayModeUpdate</servlet-name>
+    <url-pattern>/OrderPayModeUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderPayMode_Text</servlet-name>
+    <url-pattern>/OrderPayMode_Text</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderSubmit</servlet-name>
+    <url-pattern>/OrderSubmit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectProvince</servlet-name>
+    <url-pattern>/SelectProvince</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectCityServlet</servlet-name>
+    <url-pattern>/SelectCityServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectAreaServlet</servlet-name>
+    <url-pattern>/SelectAreaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderCarryMode</servlet-name>
+    <url-pattern>/OrderCarryMode</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderCarryModeUpdate</servlet-name>
+    <url-pattern>/OrderCarryModeUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderCarryMode_Text</servlet-name>
+    <url-pattern>/OrderCarryMode_Text</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Order</servlet-name>
+    <url-pattern>/Order</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderSelect</servlet-name>
+    <url-pattern>/OrderSelect</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderDelete</servlet-name>
+    <url-pattern>/OrderDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Null2</servlet-name>
+    <url-pattern>/Null2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderOrderAndDetatlSelect</servlet-name>
+    <url-pattern>/OrderOrderAndDetatlSelect</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateOrderNumber</servlet-name>
+    <url-pattern>/UpdateOrderNumber</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RevertGoodsNumber</servlet-name>
+    <url-pattern>/RevertGoodsNumber</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderDetail</servlet-name>
+    <url-pattern>/OrderDetail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderDetailShow</servlet-name>
+    <url-pattern>/OrderDetailShow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderManager</servlet-name>
+    <url-pattern>/manager/OrderManager</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Null3</servlet-name>
+    <url-pattern>/manager/Null3</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Null4</servlet-name>
+    <url-pattern>/manager/Null4</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderDelete2</servlet-name>
+    <url-pattern>/manager/OrderDelete2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderDetailShow2</servlet-name>
+    <url-pattern>/manager/OrderDetailShow2</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderConsignment</servlet-name>
+    <url-pattern>/manager/OrderConsignment</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PlacardPagination</servlet-name>
+    <url-pattern>/manager/PlacardPagination</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PlacardSelect</servlet-name>
+    <url-pattern>/manager/PlacardSelect</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PlacardInsert</servlet-name>
+    <url-pattern>/manager/PlacardInsert</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Username</servlet-name>
+    <url-pattern>/manager/Username</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PlacardDelete</servlet-name>
+    <url-pattern>/manager/PlacardDelete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PlacardUpdate</servlet-name>
+    <url-pattern>/manager/PlacardUpdate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PlacardSelectplacardID</servlet-name>
+    <url-pattern>/manager/PlacardSelectplacardID</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PlacardShow</servlet-name>
+    <url-pattern>/PlacardShow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IndexSelect</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StatisticSelect</servlet-name>
+    <url-pattern>/StatisticSelect</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StatisticSelectShow</servlet-name>
+    <url-pattern>/StatisticSelectShow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderSend</servlet-name>
+    <url-pattern>/OrderSend</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderSendYorN</servlet-name>
+    <url-pattern>/OrderSendYorN</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FavoritsSelect</servlet-name>
+    <url-pattern>/FavoritsSelect</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FavoritsInsert</servlet-name>
+    <url-pattern>/FavoritsInsert</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FavoritsSelectManager</servlet-name>
+    <url-pattern>/FavoritsSelectManager</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FavoritsDelete</servlet-name>
+    <url-pattern>/FavoritsDelete</url-pattern>
+  </servlet-mapping>
+  <!-- 完成收藏夹后的配置文件 2009/12/11 18:42 -->
+
+
+  
+
+
+<!-- 陈孟飞 结束 --> 
+
+	<!-- 黄雄星配置文件 -->
+  <servlet>
+    <servlet-name>Encoding</servlet-name>
+    <servlet-class>com.fendou.filter.Encoding</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Bill_add</servlet-name>
+    <servlet-class>com.fendou.bill.manager.Bill_add</servlet-class>
+  </servlet>
+  <!-- jsp页面的配置 -->
+  <servlet>
+  	<servlet-name>bill_add.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/manager/bill_add.jsp</jsp-file>
+  </servlet>
+  <servlet>
+  	<servlet-name>upload.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/manager/upload.jsp</jsp-file>
+  </servlet>
+  <servlet>
+  	<servlet-name>bill_list.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/manager/bill_list.jsp</jsp-file>
+  </servlet>
+  <servlet>
+  	<servlet-name>bill_modify.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/manager/bill_modify.jsp</jsp-file>
+  </servlet>
+   <servlet>
+  	<servlet-name>readPictrue.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/manager/readPictrue.jsp</jsp-file>
+  </servlet>
+  <servlet>
+  	<servlet-name>index.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/show/index.jsp</jsp-file>
+  </servlet>
+  <servlet>
+  	<servlet-name>goodsManage.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/manager/goodsManage.jsp</jsp-file>
+  </servlet>
+  <servlet>
+  	<servlet-name>goods_add.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/manager/goods_add.jsp</jsp-file>
+  </servlet>
+   <servlet>
+  	<servlet-name>parameterManage.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/manager/parameterManage.jsp</jsp-file>
+  </servlet>
+  <servlet>
+  	<servlet-name>superType_add.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/manager/superType_add.jsp</jsp-file>
+  </servlet>
+  <servlet>
+  	<servlet-name>subType.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/manager/subType.jsp</jsp-file>
+  </servlet>
+  <servlet>
+  	<servlet-name>subType_add.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/manager/subType_add.jsp</jsp-file>
+  </servlet>
+  <servlet>
+  	<servlet-name>subType_modify.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/manager/subType_modify.jsp</jsp-file>
+  </servlet>
+  <servlet>
+  	<servlet-name>superType_modify.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/manager/superType_modify.jsp</jsp-file>
+  </servlet>
+   <servlet>
+  	<servlet-name>goods_detail.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/manager/goods_detail.jsp</jsp-file>
+  </servlet>
+  <servlet>
+  	<servlet-name>goods_modify.jsp</servlet-name>
+  	<jsp-file>/WEB-INF/manager/goods_modify.jsp</jsp-file>
+  </servlet>
+
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpLoad</servlet-name>
+    <servlet-class>com.fendou.bill.manager.UpLoad</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetPicturePathAjax</servlet-name>
+    <servlet-class>com.fendou.bill.manager.GetPicturePathAjax</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteBill</servlet-name>
+    <servlet-class>com.fendou.bill.manager.DeleteBill</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectBill</servlet-name>
+    <servlet-class>com.fendou.bill.manager.SelectBill</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdataBill</servlet-name>
+    <servlet-class>com.fendou.bill.manager.UpdataBill</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectBillOne</servlet-name>
+    <servlet-class>com.fendou.bill.manager.SelectBillOne</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SuperTypeAdd</servlet-name>
+    <servlet-class>com.fendou.goods.manager.SuperTypeAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectSuperType</servlet-name>
+    <servlet-class>com.fendou.goods.manager.SelectSuperType</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SubTypeAdd</servlet-name>
+    <servlet-class>com.fendou.goods.manager.SubTypeAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PassParameter</servlet-name>
+    <servlet-class>com.fendou.goods.manager.PassParameter</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PassParameter1</servlet-name>
+    <servlet-class>com.fendou.goods.manager.PassParameter1</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectSubType</servlet-name>
+    <servlet-class>com.fendou.goods.manager.SelectSubType</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteSub</servlet-name>
+    <servlet-class>com.fendou.goods.manager.DeleteSub</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectSubTypeOne</servlet-name>
+    <servlet-class>com.fendou.goods.manager.SelectSubTypeOne</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateSubType</servlet-name>
+    <servlet-class>com.fendou.goods.manager.UpdateSubType</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectSuperTypeOne</servlet-name>
+    <servlet-class>com.fendou.goods.manager.SelectSuperTypeOne</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateSuperType</servlet-name>
+    <servlet-class>com.fendou.goods.manager.UpdateSuperType</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteSuperType</servlet-name>
+    <servlet-class>com.fendou.goods.manager.DeleteSuperType</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectSubTypeAjax</servlet-name>
+    <servlet-class>com.fendou.goods.manager.SelectSubTypeAjax</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GoodsAdd</servlet-name>
+    <servlet-class>com.fendou.goods.manager.GoodsAdd</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RebateAjax</servlet-name>
+    <servlet-class>com.fendou.goods.manager.RebateAjax</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectGoods</servlet-name>
+    <servlet-class>com.fendou.goods.manager.SelectGoods</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Goods_detailSelect</servlet-name>
+    <servlet-class>com.fendou.goods.manager.Goods_detailSelect</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SelectGoodsOne</servlet-name>
+    <servlet-class>com.fendou.goods.manager.SelectGoodsOne</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Invalidate</servlet-name>
+    <servlet-class>com.fendou.goods.manager.Invalidate</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateGoodsSelectSuperType</servlet-name>
+    <servlet-class>com.fendou.goods.manager.UpdateGoodsSelectSuperType</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RepairAjax</servlet-name>
+    <servlet-class>com.fendou.goods.manager.RepairAjax</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UpdateGoods</servlet-name>
+    <servlet-class>com.fendou.goods.manager.UpdateGoods</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Seach</servlet-name>
+    <servlet-class>com.fendou.goods.manager.Seach</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>SuperCodeAddAjax</servlet-name>
+    <servlet-class>com.fendou.goods.manager.SuperCodeAddAjax</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SuperCodeUpdateAjax</servlet-name>
+    <servlet-class>com.fendou.goods.manager.SuperCodeUpdateAjax</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Sale</servlet-name>
+    <servlet-class>com.fendou.goods.manager.Sale</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NewGoods</servlet-name>
+    <servlet-class>com.fendou.goods.manager.NewGoods</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Goods_detail</servlet-name>
+    <servlet-class>com.fendou.goods.manager.Goods_detail</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+	<!-- jsp-mapping页面的配置 -->
+  <servlet-mapping>
+  	<servlet-name>bill_add.jsp</servlet-name>
+  	<url-pattern>/manager/bill_add.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>upload.jsp</servlet-name>
+  	<url-pattern>/manager/upload.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>bill_list.jsp</servlet-name>
+  	<url-pattern>/manager/bill_list.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>bill_modify.jsp</servlet-name>
+  	<url-pattern>/manager/bill_modify.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>readPictrue.jsp</servlet-name>
+  	<url-pattern>/manager/readPictrue.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>index.jsp</servlet-name>
+  	<url-pattern>/show/index.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>goodsManage.jsp</servlet-name>
+  	<url-pattern>/manager/goodsManage.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>goods_add.jsp</servlet-name>
+  	<url-pattern>/manager/goods_add.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>superType_add.jsp</servlet-name>
+  	<url-pattern>/manager/superType_add.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>parameterManage.jsp</servlet-name>
+  	<url-pattern>/manager/parameterManage.jsp</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+  	<servlet-name>subType.jsp</servlet-name>
+  	<url-pattern>/manager/subType.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>subType_add.jsp</servlet-name>
+  	<url-pattern>/manager/subType_add.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>subType_modify.jsp</servlet-name>
+  	<url-pattern>/manager/subType_modify.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>goods_detail.jsp</servlet-name>
+  	<url-pattern>/manager/goods_detail.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>superType_modify.jsp</servlet-name>
+  	<url-pattern>/manager/superType_modify.jsp</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>goods_modify.jsp</servlet-name>
+  	<url-pattern>/manager/goods_modify.jsp</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+  	<servlet-name>mode.jsp</servlet-name>
+  	<url-pattern>/manager/mode.jsp</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>Encoding</servlet-name>
+    <url-pattern>/Encoding</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Bill_add</servlet-name>
+    <url-pattern>/manager/Bill_add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpLoad</servlet-name>
+    <url-pattern>/manager/UpLoad</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetPicturePathAjax</servlet-name>
+    <url-pattern>/manager/GetPicturePathAjax</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteBill</servlet-name>
+    <url-pattern>/manager/DeleteBill</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectBill</servlet-name>
+    <url-pattern>/manager/SelectBill</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdataBill</servlet-name>
+    <url-pattern>/manager/UpdataBill</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectBillOne</servlet-name>
+    <url-pattern>/manager/SelectBillOne</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SuperTypeAdd</servlet-name>
+    <url-pattern>/manager/SuperTypeAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectSuperType</servlet-name>
+    <url-pattern>/manager/SelectSuperType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SubTypeAdd</servlet-name>
+    <url-pattern>/manager/SubTypeAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PassParameter</servlet-name>
+    <url-pattern>/manager/PassParameter</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PassParameter1</servlet-name>
+    <url-pattern>/manager/PassParameter1</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectSubType</servlet-name>
+    <url-pattern>/manager/SelectSubType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteSub</servlet-name>
+    <url-pattern>/manager/DeleteSub</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectSubTypeOne</servlet-name>
+    <url-pattern>/manager/SelectSubTypeOne</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateSubType</servlet-name>
+    <url-pattern>/manager/UpdateSubType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectSuperTypeOne</servlet-name>
+    <url-pattern>/manager/SelectSuperTypeOne</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateSuperType</servlet-name>
+    <url-pattern>/manager/UpdateSuperType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteSuperType</servlet-name>
+    <url-pattern>/manager/DeleteSuperType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectSubTypeAjax</servlet-name>
+    <url-pattern>/manager/SelectSubTypeAjax</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GoodsAdd</servlet-name>
+    <url-pattern>/manager/GoodsAdd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RebateAjax</servlet-name>
+    <url-pattern>/manager/RebateAjax</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectGoods</servlet-name>
+    <url-pattern>/manager/SelectGoods</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Goods_detailSelect</servlet-name>
+    <url-pattern>/manager/Goods_detailSelect</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectGoodsOne</servlet-name>
+    <url-pattern>/manager/SelectGoodsOne</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Invalidate</servlet-name>
+    <url-pattern>/manager/Invalidate</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateGoodsSelectSuperType</servlet-name>
+    <url-pattern>/manager/UpdateGoodsSelectSuperType</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RepairAjax</servlet-name>
+    <url-pattern>/manager/RepairAjax</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateGoods</servlet-name>
+    <url-pattern>/manager/UpdateGoods</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Seach</servlet-name>
+    <url-pattern>/manager/Seach</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>IndexSelect</servlet-name>
+    <url-pattern>/index</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SuperCodeAddAjax</servlet-name>
+    <url-pattern>/manager/SuperCodeAddAjax</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SuperCodeUpdateAjax</servlet-name>
+    <url-pattern>/manager/SuperCodeUpdateAjax</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Sale</servlet-name>
+    <url-pattern>/Sale</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>NewGoods</servlet-name>
+    <url-pattern>/NewGoods</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Goods_detail</servlet-name>
+    <url-pattern>/Goods_detail</url-pattern>
+  </servlet-mapping>
+ <servlet>
+		<servlet-name>Connector</servlet-name>
+		<servlet-class>
+			net.fckeditor.connector.ConnectorServlet
+		</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderShopcarPagination</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderShopcarPagination</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>SubCodeAddAjax</servlet-name>
+    <servlet-class>com.fendou.goods.manager.SubCodeAddAjax</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StatisticJfreeChart</servlet-name>
+    <servlet-class>com.fendou.statistic.manager.StatisticJfreeChart</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>StatisticSellSort</servlet-name>
+    <servlet-class>com.fendou.statistic.manager.StatisticSellSort</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderBill</servlet-name>
+    <servlet-class>com.fendou.bill.manager.OrderBill</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderBillBack</servlet-name>
+    <servlet-class>com.fendou.bill.manager.OrderBillBack</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SeachIndex</servlet-name>
+    <servlet-class>com.fendou.goods.manager.SeachIndex</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CommentSubmit</servlet-name>
+    <servlet-class>com.fendou.commentary.manager.CommentSubmit</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>GoodsListShow</servlet-name>
+    <servlet-class>com.fendou.goods.manager.GoodsListShow</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CommentSelect</servlet-name>
+    <servlet-class>com.fendou.commentary.manager.CommentSelect</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CommentPagination</servlet-name>
+    <servlet-class>com.fendou.commentary.manager.CommentPagination</servlet-class>
+  </servlet>
+<servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CommentManagerSelect</servlet-name>
+    <servlet-class>com.fendou.commentary.manager.CommentManagerSelect</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>Connector</servlet-name>
+		<url-pattern>
+			/fckeditor/editor/filemanager/connectors/*
+		</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderShopcarPagination</servlet-name>
+    <url-pattern>/OrderShopcarPagination</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SubCodeAddAjax</servlet-name>
+    <url-pattern>/manager/SubCodeAddAjax</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StatisticJfreeChart</servlet-name>
+    <url-pattern>/StatisticJfreeChart</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>StatisticSellSort</servlet-name>
+    <url-pattern>/StatisticSellSort</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderBill</servlet-name>
+    <url-pattern>/manager/OrderBill</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderBillBack</servlet-name>
+    <url-pattern>/manager/OrderBillBack</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SeachIndex</servlet-name>
+    <url-pattern>/SeachIndex</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommentSubmit</servlet-name>
+    <url-pattern>/CommentSubmit</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GoodsListShow</servlet-name>
+    <url-pattern>/GoodsListShow</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommentSelect</servlet-name>
+    <url-pattern>/CommentSelect</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CommentPagination</servlet-name>
+    <url-pattern>/CommentPagination</url-pattern>
+  </servlet-mapping>
+	  <servlet-mapping>
+    <servlet-name>CommentManagerSelect</servlet-name>
+    <url-pattern>/manager/CommentManagerSelect</url-pattern>
+  </servlet-mapping>
+
+ 
+  <!-- 黄雄星配置文件 -->
+  <!-- 尹龙  -->
+	<servlet>
+		<servlet-name>VerifyCodeServlet</servlet-name>
+		<servlet-class>
+			com.fendou.util.VerifyCodeServlet
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>MemberRegister</servlet-name>
+		<servlet-class>
+			com.fendou.member.servlet.MemberRegister
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ResponseProvince</servlet-name>
+		<servlet-class>
+			com.fendou.member.servlet.ResponseProvince
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ResponseCity</servlet-name>
+		<servlet-class>
+			com.fendou.member.servlet.ResponseCity
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ResponseArea</servlet-name>
+		<servlet-class>
+			com.fendou.member.servlet.ResponseArea
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>register.jsp</servlet-name>
+		<jsp-file>/WEB-INF/show/register.jsp</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>memberManage.jsp</servlet-name>
+		<jsp-file>/WEB-INF/manager/memberManage.jsp</jsp-file>
+	</servlet>
+	<servlet>
+		<servlet-name>adminLogin.jsp</servlet-name>
+		<jsp-file>/WEB-INF/manager/adminLogin.jsp</jsp-file>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>adminLogin.jsp</servlet-name>
+		<url-pattern>/manager/adminLogin</url-pattern>
+	</servlet-mapping>
+	
+  <servlet>
+    <servlet-name>MemberLogin</servlet-name>
+    <servlet-class>com.fendou.member.servlet.MemberLogin</servlet-class>
+  </servlet>
+
+  <servlet>
+    <servlet-name>LoginOut</servlet-name>
+    <servlet-class>com.fendou.member.servlet.LoginOut</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ShowMemberInfo</servlet-name>
+    <servlet-class>com.fendou.member.servlet.ShowMemberInfo</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <servlet-name>ModifyPwd</servlet-name>
+    <servlet-class>com.fendou.member.servlet.ModifyPwd</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ModifyAddress</servlet-name>
+    <servlet-class>com.fendou.member.servlet.ModifyAddress</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectMemberList</servlet-name>
+    <servlet-class>com.fendou.member.servlet.SelectMemberList</servlet-class>
+  </servlet>
+   <servlet>
+    <servlet-name>QueryMemberDetail</servlet-name>
+    <servlet-class>com.fendou.member.servlet.QueryMemberDetail</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Test</servlet-name>
+    <servlet-class>com.fendou.member.servlet.Test</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LockMember</servlet-name>
+    <servlet-class>com.fendou.member.servlet.LockMember</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UnLockMember</servlet-name>
+    <servlet-class>com.fendou.member.servlet.UnLockMember</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MemberSearch</servlet-name>
+    <servlet-class>com.fendou.member.servlet.MemberSearch</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SearchLockMember</servlet-name>
+    <servlet-class>com.fendou.member.servlet.SearchLockMember</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SearchUnlockMember</servlet-name>
+    <servlet-class>com.fendou.member.servlet.SearchUnlockMember</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MemberSearchAgain</servlet-name>
+    <servlet-class>com.fendou.member.servlet.MemberSearchAgain</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>UserLogin</servlet-name>
+    <servlet-class>com.fendou.member.servlet.UserLogin</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CometoManage</servlet-name>
+    <servlet-class>com.fendou.member.servlet.CometoManage</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>OrderSearch</servlet-name>
+    <servlet-class>com.fendou.order.manager.OrderSearch</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Register</servlet-name>
+    <servlet-class>com.fendou.member.servlet.Register</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ValidUsername</servlet-name>
+    <servlet-class>com.fendou.member.servlet.ValidUsername</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>MemberLoginOut</servlet-name>
+    <servlet-class>com.fendou.member.servlet.MemberLoginOut</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>SelectSuperTypeGoods</servlet-name>
+    <servlet-class>com.fendou.goods.manager.SelectSuperTypeGoods</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>register.jsp</servlet-name>
+		<url-pattern>/register.jsp</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+    <servlet-name>memberManage.jsp</servlet-name>
+    <url-pattern>/memberManage.jsp</url-pattern>
+  </servlet-mapping>
+
+	
+
+
+	<servlet-mapping>
+		<servlet-name>MemberRegister</servlet-name>
+		<url-pattern>/MemberRegister</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ResponseProvince</servlet-name>
+		<url-pattern>/ResponseProvince</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ResponseCity</servlet-name>
+		<url-pattern>/ResponseCity</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ResponseArea</servlet-name>
+		<url-pattern>/ResponseArea</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>VerifyCodeServlet</servlet-name>
+		<url-pattern>/VerifyCode</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MemberLogin</servlet-name>
+    <url-pattern>/MemberLogin</url-pattern>
+  </servlet-mapping>
+<servlet-mapping>
+		<servlet-name>IndexSelect</servlet-name>
+		<url-pattern>/index</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginOut</servlet-name>
+    <url-pattern>/manager/LoginOut</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowMemberInfo</servlet-name>
+    <url-pattern>/ShowMemberInfo</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModifyPwd</servlet-name>
+    <url-pattern>/ModifyPwd</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModifyAddress</servlet-name>
+    <url-pattern>/ModifyAddress</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectMemberList</servlet-name>
+    <url-pattern>/manager/SelectMemberList</url-pattern>
+  </servlet-mapping>
+   <servlet-mapping>
+    <servlet-name>QueryMemberDetail</servlet-name>
+    <url-pattern>/manager/QueryMemberDetail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Test</servlet-name>
+    <url-pattern>/manager/Test</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LockMember</servlet-name>
+    <url-pattern>/manager/LockMember</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UnLockMember</servlet-name>
+    <url-pattern>/manager/UnLockMember</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MemberSearch</servlet-name>
+    <url-pattern>/manager/MemberSearch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchLockMember</servlet-name>
+    <url-pattern>/manager/SearchLockMember</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SearchUnlockMember</servlet-name>
+    <url-pattern>/manager/SearchUnlockMember</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MemberSearchAgain</servlet-name>
+    <url-pattern>/manager/MemberSearchAgain</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserLogin</servlet-name>
+    <url-pattern>/manager/UserLogin</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CometoManage</servlet-name>
+    <url-pattern>/manager/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderSearch</servlet-name>
+    <url-pattern>/manager/OrderSearch</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Register</servlet-name>
+    <url-pattern>/Register</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ValidUsername</servlet-name>
+    <url-pattern>/ValidUsername</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MemberLoginOut</servlet-name>
+    <url-pattern>/MemberLoginOut</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>SelectSuperTypeGoods</servlet-name>
+    <url-pattern>/manager/SelectSuperTypeGoods</url-pattern>
+  </servlet-mapping>
+
+
+	
+
+
+	
+<!-- 尹龙 完 -->
+
+<welcome-file-list>
+	<welcome-file>index</welcome-file>
+</welcome-file-list> 
+
+ <filter>
+  	<filter-name>EncodingFilter</filter-name>
+  	<filter-class>com.fendou.filter.EncodingFilter</filter-class>
+  	<init-param>
+  		<param-name>Encoding</param-name>
+  		<param-value>UTF-8</param-value>
+  	</init-param>	
+  </filter>
+  <filter-mapping>
+  	<filter-name>EncodingFilter</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+</web-app>
